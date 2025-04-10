@@ -3,9 +3,8 @@ import docs from "$lib/content/index.js"
 
 export function entries() {
    const allRoutes = [
-      ...docs.map(doc => ({
-         category: "selectoplasm",
-         doc
+      ...docs.map(slug => ({
+         slug
       })),
 
    ]
